@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-config="site.title">DennisKelich.com Impressum</title>
+  <link rel="stylesheet" href="https://cdn.dennis-kelich.com/1.0.0/styles.min.css"/>
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.dennis-kelich.com/dkfav.jpg'>
+  <script>
+    // Apply dark mode class to HTML element immediately to prevent flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+  <!-- Scroll Progress Bar - Shows reading progress at top of page -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  
+  <!-- Back to Top Button - Appears after scrolling 500px -->
+  <button onclick='topFunction()' id='myBtn' title='Go to top'>^</button>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <span class="site-title" data-config="site.title">DennisKelich.com</span>
+      
+      <nav id='site-navigation' class='main-navigation left'>
+        <!-- Burger Menu Icon (Mobile Only) -->
+        <div class='burger'>
+          <label for='menu-0'></label>
+        </div>
+        
+        <div class='menu-mobile-menu-container'>
+          <input id='menu-0' type='checkbox' class='menu-checkbox'>
+          <div class='menu-wrapper menu'>
+            <div class='schaltflaeche'></div>
+            <ul id='mobile-menu' class='menu-top'>
+              <li><label class='menu-toggle toplvl' for='menu-0'></label></li>
+
+              <!-- Navigation items with multilingual support (data-lang) -->
+              <!-- About Me / Über mich / 紹介 -->
+              <li id='menu-item-1' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#about'>Über mich</a></li>
+              <li id='menu-item-2' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../blog/'>Blog</a></li>
+              <li id='menu-item-3' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#projects'>Referenzen</a></li>
+              <li id='menu-item-4' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../contact/' data-config-href="urls.contact">Kontakt</a></li>
+
+              <!-- Mobile-only footer links -->
+              <li id='menu-item-4607' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page'><a href='../impressum/' data-config-href="urls.impressum">Imprint</a></li>
+              <li id='menu-item-4592' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy'><a href='../datenschutz/' data-config-href="urls.datenschutz">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- Right side: Language switcher and dark mode toggle -->
+    <div class="nav-right">
+      <div class="lang-switch menu-top">
+        <a href="https://de.dennis-kelich.com">DE</a>
+        <a href="https://dennis-kelich.com">EN</a>
+        <a href="https://jp.dennis-kelich.com">日本語</a>
+      </div>
+      <!-- Dark Mode Toggle - Triggers toggleDarkMode() function -->
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== SUB-HEADER BANNER ==================== -->
+<div class='sub_header_banner'>
+    <center data-lang="de">Impressum</center>
+    <center data-lang="en" hidden>Imprint</center>
+    <center data-lang="ja" hidden>Imprint</center>
+</div>
+
+<!-- ==================== MAIN CONTENT ==================== -->
+<div class='content_wrapper'>
+
+  <section id="blog" class="section" style='border-radius: 20px;'>
+    <h2 style='margin-bottom: -10px;'>Betreiber des Web Angebotes</h2>
+        <p>
+            <center>
+                Dennis Kelich<br>
+                Akazienweg 9<br>
+                38448 Wolfsburg<br>
+                <br>
+                Mail: imp.kontakt.de@denniskelich.com
+            </center>
+<br>
+        </p>
+    <h2 style='margin-bottom: -10px;'>Bildnachweise</h2>
+        <p>
+            <ul>
+                <li>#2154196761 - &copy; shutterstock.com / Net Vector - <a target='_blank' href="https://www.shutterstock.com/image-vector/sea-mountain-landscape-chinese-style-background-2154196761">Sea and mountain landscape in chinese style background. Japanese watercolor painting</a></li>
+            </ul>
+        </p>
+
+    
+    <h2 style='margin-bottom: -10px;'>Angaben zum Urheberrecht</h2>
+    <p>
+        Soweit die Inhalte auf dieser Seite nicht von DennisKelich.com erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+    </p>
+    <h2 style='margin-bottom: -10px;'>Haftungshinweis</h2>
+    <p>
+        Alle Texte und Links wurden sorgfältig geprüft und werden laufend aktualisiert. Wir sind bemüht, richtige und vollständige Informationen auf dieser Website bereitzustellen, übernehmen aber keinerlei Verantwortung, Garantien oder Haftung dafür, dass die durch diese Website bereitgestellten Informationen, richtig, vollständig oder aktuell sind. Wir behalten uns das Recht vor, jederzeit und ohne Vorankündigung die Informationen auf dieser Website zu ändern und verpflichten uns auch nicht, die enthaltenen Informationen zu aktualisieren.
+    </p>
+    <h2 style='margin-bottom: -10px;'>Verweise und Links</h2>
+    <p>
+        Alle Links zu externen Anbietern wurden zum Zeitpunkt ihrer Aufnahme auf ihre Richtigkeit überprüft, dennoch haften wir nicht für Inhalte und Verfügbarkeit von Websites, die mittels Hyperlinks zu erreichen sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die durch Inhalte verknüpfter Seiten entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde. Dabei ist es gleichgültig, ob der Schaden direkter, indirekter oder finanzieller Natur ist oder ein sonstiger Schaden vorliegt, der sich aus Datenverlust, Nutzungsausfall oder anderen Gründen aller Art ergeben könnte.
+    </p>
+    <h2 style='margin-bottom: -10px;'>Datenschutz</h2>
+    <p>
+        Informationen zu unserem Datenschutz finden Sie auf der Seite <a href="../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a>.
+    </p>
+
+  </section>
+
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+      <b data-config="site.footerTitle">Dennis Kelich InfoHP</b><br>
+      &copy; <span data-config="site.copyright">Dennis Kelich</span> | <a href="../impressum/" data-config-href="urls.impressum">Impressum</a> | <a href="../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a> | <a href="../contact/" data-config-href="urls.contact">Kontakt</a>
+  </div>
+</footer>
+
+<script src="https://cdn.dennis-kelich.com/1.0.0/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-config="site.title">DennisKelich.com Datenschutz</title>
+  <link rel="stylesheet" href="https://cdn.dennis-kelich.com/1.0.0/styles.min.css"/>
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.dennis-kelich.com/dkfav.jpg'>
+  <script>
+    // Apply dark mode class to HTML element immediately to prevent flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+  <!-- Scroll Progress Bar - Shows reading progress at top of page -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  
+  <!-- Back to Top Button - Appears after scrolling 500px -->
+  <button onclick='topFunction()' id='myBtn' title='Go to top'>^</button>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <span class="site-title" data-config="site.title">DennisKelich.com</span>
+      
+      <nav id='site-navigation' class='main-navigation left'>
+        <!-- Burger Menu Icon (Mobile Only) -->
+        <div class='burger'>
+          <label for='menu-0'></label>
+        </div>
+        
+        <div class='menu-mobile-menu-container'>
+          <input id='menu-0' type='checkbox' class='menu-checkbox'>
+          <div class='menu-wrapper menu'>
+            <div class='schaltflaeche'></div>
+            <ul id='mobile-menu' class='menu-top'>
+              <li><label class='menu-toggle toplvl' for='menu-0'></label></li>
+
+              <!-- Navigation items with multilingual support (data-lang) -->
+              <!-- About Me / Über mich / 紹介 -->
+              <li id='menu-item-1' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#about'>Über mich</a></li>
+              <li id='menu-item-2' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../blog/'>Blog</a></li>
+              <li id='menu-item-3' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#projects'>Referenzen</a></li>
+              <li id='menu-item-4' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../contact/' data-config-href="urls.contact">Kontakt</a></li>
+
+              <!-- Mobile-only footer links -->
+              <li id='menu-item-4607' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page'><a href='../impressum/' data-config-href="urls.impressum">Imprint</a></li>
+              <li id='menu-item-4592' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy'><a href='../datenschutz/' data-config-href="urls.datenschutz">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- Right side: Language switcher and dark mode toggle -->
+    <div class="nav-right">
+      <div class="lang-switch menu-top">
+        <a href="https://de.dennis-kelich.com">DE</a>
+        <a href="https://dennis-kelich.com">EN</a>
+        <a href="https://jp.dennis-kelich.com">日本語</a>
+      </div>
+      <!-- Dark Mode Toggle - Triggers toggleDarkMode() function -->
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== SUB-HEADER BANNER ==================== -->
+<div class='sub_header_banner'>
+    <center>Datenschutz</center>
+</div>
+
+<!-- ==================== MAIN CONTENT ==================== -->
+<div class='content_wrapper'>
+
+  <section id="blog" class="section" style='border-radius: 20px;'>
+    <h2 style='margin-bottom: -10px;'>1. Datenschutz auf einen Blick</h2>
+        <p>
+          <h3>Allgemeine Hinweise</h3>
+          Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.<br>
+          <br>
+          <h3>Datenerfassung auf dieser Website</h3>
+          <b>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</b><br>
+          Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.<br>
+          <br>
+          <b>Wie erfassen wir Ihre Daten?</b><br>
+          Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT- Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.<br>
+          <br>
+          <b>Wofür nutzen wir Ihre Daten?</b><br>
+          Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.<br>
+          <br>
+          <b>Welche Rechte haben Sie bezüglich Ihrer Daten?</b><br>
+          Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.<br>
+          <br>
+          Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.<br>
+          <br>
+        </p>
+
+        <h2 style='margin-bottom: -10px;'>2. Hosting</h2>
+        <p>
+<h3>Netcup.com</h3>
+          Wir hosten unsere Website bei Netcup.com. Anbieter ist die netcup GmbH, Daimlerstraße 25, D-76185 Karlsruhe (nachfolgend Netcup.com). Details entnehmen Sie der
+          Datenschutzerklärung von Netcup.com:<br>
+          <a href='https://www.netcup.com/de/kontakt/datenschutzerklaerung' target='_blank'>https://www.netcup.com/de/kontakt/datenschutzerklaerung</a>.<br>
+          <br>
+          Die Verwendung von Netcup.com erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein
+          berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine
+          entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art.
+          6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den
+          Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG
+          umfasst. Die Einwilligung ist jederzeit widerrufbar.
+          
+<h3>Auftragsverarbeitung</h3>
+          Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen.
+          Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass
+          dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter
+          Einhaltung der DSGVO verarbeitet. 
+        </p>
+
+        <h2 style='margin-bottom: -10px;'>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+        <p>
+Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre
+          personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie
+          dieser Datenschutzerklärung.<br>
+          <br>
+          Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
+          Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende
+          Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.<br>
+          <br>
+          Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail)
+          Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+          möglich.  
+
+<h3>Hinweis zur verantwortlichen Stelle</h3>
+          Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br>
+          <br>
+          Dennis Kelich<br>
+          <br>
+          Akazienweg 9<br>
+          38448 Wolfsburg<br>
+          imp.kontakt.de@denniskelich.com<br>
+          <br>
+          Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
+          die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)
+          entscheidet.  
+
+<h3>Speicherdauer</h3>
+Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
+Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein
+berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen,
+werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer
+personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im
+letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.<br>
+<br>
+                    <h3>Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website</h3>
+Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf
+Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien
+nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung
+personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art.
+49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in
+Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich
+auf Grundlage von § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur
+Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre
+Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese
+zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO.
+Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f
+DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden
+Absätzen dieser Datenschutzerklärung informiert.  
+
+<h3>Hinweis zur Datenweitergabe in die USA und sonstige Drittstaaten</h3>
+Wir verwenden unter anderem Tools von Unternehmen mit Sitz in den USA oder sonstigen
+datenschutzrechtlich nicht sicheren Drittstaaten. Wenn diese Tools aktiv sind, können Ihre
+personenbezogene Daten in diese Drittstaaten übertragen und dort verarbeitet werden. Wir weisen darauf
+hin, dass in diesen Ländern kein mit der EU vergleichbares Datenschutzniveau garantiert werden kann.
+Beispielsweise sind US-Unternehmen dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden
+herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht
+ausgeschlossen werden, dass US-Behörden (z. B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu
+Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese
+Verarbeitungstätigkeiten keinen Einfluss.<br>
+<br>
+                    <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine
+bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
+Datenverarbeitung bleibt vom Widerruf unberührt.<br>
+<br>
+
+<h3>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO
+ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN
+SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN
+WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES
+PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT,
+ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN,
+WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES
+SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG
+NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE
+VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON
+RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).<br>
+<br>
+WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN,
+SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE
+BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG
+EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN
+VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN
+ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH
+NACH ART. 21 ABS. 2 DSGVO).   
+
+<h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes
+oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger
+verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.<br>
+<br>
+                    <h3>Recht auf Datenübertragbarkeit</h3>
+Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags
+automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format
+aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen
+verlangen, erfolgt dies nur, soweit es technisch machbar ist.<br>
+<br>
+                    <h3>SSL- bzw. TLS-Verschlüsselung</h3>
+Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum
+Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-
+Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von
+„http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht
+von Dritten mitgelesen werden.  
+
+<h3>Auskunft, Löschung und Berichtigung</h3>
+Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche
+Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den
+Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie
+zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.<br>
+<br>
+                    <h3>Recht auf Einschränkung der Verarbeitung</h3>
+Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in
+folgenden Fällen:<br>
+<br>
+- Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir
+in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die
+Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.<br>
+- Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie
+statt der Löschung die Einschränkung der Datenverarbeitung verlangen.<br>
+- Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung,
+Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der
+Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.<br>
+- Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen
+Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
+zu verlangen.<br>
+<br>
+Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von
+ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder
+Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder
+juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder
+eines Mitgliedstaats verarbeitet werden.  
+        </p>
+
+        <h2 style='margin-bottom: -10px;'>4. Datenerfassung auf dieser Website</h2>
+        <p>
+<h3>Cookies</h3>
+a) Beschreibung und Umfang der Datenverarbeitung
+Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.<br>
+<br>
+Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Internetseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann.
+<br>
+b) Rechtsgrundlage für die Datenverarbeitung
+Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies ist Art. 6 Abs. 1 lit. f DSGVO.<br>
+<br>
+c) Zweck der Datenverarbeitung
+Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer zu vereinfachen. Einige Funktionen unserer Internetseite können ohne den Einsatz von Cookies nicht angeboten werden. Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt wird.<br>
+<br>
+Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von Nutzerprofilen verwendet.<br>
+<br>
+In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung der personenbezogenen Daten nach Art. 6 Abs. 1 lit. f DSGVO.<br>
+<br>
+d) Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit
+Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.<br>
+<br>
+Sie können Ihre Zustimmung zu einzelnen oder allen Cookies widerrufen, indem Sie auf folgenden Link klicken: Cookie-Einstellungen anpassen. <br>
+<br>
+Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von Nutzerprofilen verwendet.<br>
+<br>
+In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung der personenbezogenen Daten nach Art. 6 Abs. 1 lit. f DSGVO.<br>
+<br>
+d) Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit
+Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.<br>
+<br>
+<!--Sie können Ihre Zustimmung zu einzelnen oder allen Cookies widerrufen, indem Sie auf folgenden Link klicken: Cookie-Einstellungen anpassen. -->  
+
+
+
+<h3>Server-Log-Dateien</h3>
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-
+Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:<br>
+Browsertyp und Browserversion, 
+verwendetes Betriebssystem, 
+Referrer URL, 
+Hostname des zugreifenden Rechners, 
+Uhrzeit der Serveranfrage, 
+IP-Adresse, 
+Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat
+ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website –
+hierzu müssen die Server-Log-Files erfasst werden.
+
+<h3>Kontaktformular</h3>
+Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem
+Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage
+und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre
+Einwilligung weiter.<br>
+<br>
+Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit
+der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen
+erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der
+effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
+Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit
+widerrufbar.<br>
+<br>
+Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung
+auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt
+(z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen –
+insbesondere Aufbewahrungsfristen – bleiben unberührt.  
+
+<h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus
+hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens
+bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.<br>
+<br>
+Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit
+der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen
+erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der
+effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
+Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit
+widerrufbar.<br>
+<br>
+Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung
+auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt
+(z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen –
+insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.  
+        </p>
+
+        <h2 style='margin-bottom: -10px;'>5. Plugins und Tools</h2>
+        <p>
+<h3>YouTube mit erweitertem Datenschutz</h3>
+Diese Website bindet Videos der YouTube ein. Betreiber der Seiten ist die Google Ireland Limited („Google“),
+Gordon House, Barrow Street, Dublin 4, Irland.<br>
+<br>
+Wir nutzen YouTube im erweiterten Datenschutzmodus. Dieser Modus bewirkt laut YouTube, dass
+YouTube keine Informationen über die Besucher auf dieser Website speichert, bevor diese sich das Video
+ansehen. Die Weitergabe von Daten an YouTube-Partner wird durch den erweiterten Datenschutzmodus
+hingegen nicht zwingend ausgeschlossen. So stellt YouTube – unabhängig davon, ob Sie sich ein Video
+ansehen – eine Verbindung zum Google DoubleClick-Netzwerk her.<br>
+<br>
+Sobald Sie ein YouTube-Video auf dieser Website starten, wird eine Verbindung zu den Servern von
+YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.
+Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr Surfverhalten direkt
+Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-
+Account ausloggen.<br>
+<br>
+Des Weiteren kann YouTube nach Starten eines Videos verschiedene Cookies auf Ihrem Endgerät speichern
+oder vergleichbare Wiedererkennungstechnologien (z. B. Device-Fingerprinting) einsetzen. Auf diese Weise
+kann YouTube Informationen über Besucher dieser Website erhalten. Diese Informationen werden u. a.
+verwendet, um Videostatistiken zu erfassen, die Anwenderfreundlichkeit zu verbessern und
+Betrugsversuchen vorzubeugen.<br>
+<br>
+Gegebenenfalls können nach dem Start eines YouTube-Videos weitere Datenverarbeitungsvorgänge
+ausgelöst werden, auf die wir keinen Einfluss haben.<br>
+<br>
+Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote.
+Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine entsprechende
+Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a
+DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf
+Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
+Einwilligung ist jederzeit widerrufbar.<br>
+<br>
+Weitere Informationen über Datenschutz bei YouTube finden Sie in deren Datenschutzerklärung unter:
+<a href='https://policies.google.com/privacy?hl=de'>https://policies.google.com/privacy?hl=de</a>.        
+
+                    <h3>Google Maps</h3>
+Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon
+House, Barrow Street, Dublin 4, Irland.<br>
+<br>
+Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese
+Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Wenn Google Maps aktiviert ist,
+kann Google zum Zwecke der einheitlichen Darstellung der Schriftarten Google Web Fonts verwenden.
+Beim Aufruf von Google Maps lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte
+und Schriftarten korrekt anzuzeigen.<br>
+<br>
+Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-
+Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt
+ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine entsprechende
+Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a
+DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf
+Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die
+Einwilligung ist jederzeit widerrufbar.<br>
+<br>
+Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt.
+Details finden Sie hier:<br>
+<a href='https://privacy.google.com/businesses/gdprcontrollerterms/'>https://privacy.google.com/businesses/gdprcontrollerterms/</a> und
+<a href='https://privacy.google.com/businesses/gdprcontrollerterms/sccs/'>https://privacy.google.com/businesses/gdprcontrollerterms/sccs/</a>.<br>
+<br>
+Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google:
+<a href='https://policies.google.com/privacy?hl=de'>https://policies.google.com/privacy?hl=de</a>.  
+        </p>
+
+        <hr>
+        <center>Quelle: https://www.e-recht24.de</center>
+
+
+  </section>
+
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+      <b data-config="site.footerTitle">Dennis Kelich InfoHP</b><br>
+      &copy; <span data-config="site.copyright">Dennis Kelich</span> | <a href="../impressum/" data-config-href="urls.impressum">Impressum</a> | <a href="../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a> | <a href="../contact/" data-config-href="urls.contact">Kontakt</a>
+  </div>
+</footer>
+
+<script src="https://cdn.dennis-kelich.com/1.0.0/script.min.js"></script>
+</body>
+</html>
