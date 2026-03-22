@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-config="site.title">DennisKelich.com Kontakt</title>
+  <link rel="stylesheet" href="https://de.dennis-kelich.com/common/styles.min.css"/>
+  <link rel='shortcut icon' type='image/x-icon' href='https://de.dennis-kelich.com/common/dkfav.jpg'>
+  <script>
+    // Apply dark mode class to HTML element immediately to prevent flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+    <!-- progress-bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <button onclick='topFunction()' id='myBtn' title='Go to top'>^</button>
+
+
+<header class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <span class="site-title" data-config="site.title">DennisKelich.com</span>
+    <nav id='site-navigation' class='main-navigation left'>
+        <div class='burger'>
+            <label for='menu-0'></label>
+        </div>
+        <div class='menu-mobile-menu-container'>
+            <input id='menu-0' type='checkbox' class='menu-checkbox'>
+            <div class='menu-wrapper menu'>
+                <div class='schaltflaeche'></div>
+                    <ul id='mobile-menu' class='menu-top'>
+                        <li><label class='menu-toggle toplvl' for='menu-0'></label></li>
+
+
+                        <li id='menu-item-1' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#about'>Über mich</a></li>
+                        <li id='menu-item-2' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../blog/'>Blog</a></li>
+                        <li id='menu-item-3' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../#projects'>Referenzen</a></li>
+                        <li id='menu-item-4' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../contact/' data-config-href="urls.contact">Kontakt</a></li>
+
+                        <li id='menu-item-4607' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page'><a href='../impressum/' data-config-href="urls.impressum">Imprint</a></li>
+                        <li id='menu-item-4592' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy'><a href='../datenschutz/' data-config-href="urls.datenschutz">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>      
+        </nav>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch menu-top">
+        <a href="https://de.dennis-kelich.com">DE</a>
+        <a href="https://dennis-kelich.com">EN</a>
+        <a href="https://jp.dennis-kelich.com">日本語</a>
+      </div>
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+<div class='sub_header_banner'>
+    <center>Kontakt</center>
+</div>
+
+<!-- content inner section -->
+  <section id='contact' class='section' style='border-radius: 20px !important;margin-top: 40px;'>
+    
+    <form class='contact-form' method='POST' action="https://formspree.io/f/mpqyebqd">
+
+        <span>Name*</span>
+            <input type='text' placeholder='' name='name' id='name' required/>
+        <span>E-Mail*</span>
+            <input type='text' placeholder='' name='email' id='email' required/>
+        <span>Firma</span>
+            <input type='text' name='firma' id='firma' placeholder=''/>
+        <span>Ihre Nachricht*</span>
+            <textarea placeholder='' rows='5' name='nachricht' id='nachricht' required></textarea>
+        <!-- Datenschutzerklärung Checkbox -->
+        <label>
+            <input type='checkbox' name='datenschutz' required>
+            Ich habe die <a href='../datenschutz/' target='_blank'>Datenschutzerklärung</a> gelesen und bin damit einverstanden. *
+        </label><br><br>
+        <button type='submit'>Senden</button>
+    </form>
+    <div class='map-container'>
+
+    </div>
+  </section>
+
+<!-- footer -->
+
+  <footer class="footer">
+    <div class="container">
+        <b data-config="site.footerTitle">Dennis Kelich InfoHP</b><br>
+        &copy; <span data-config="site.copyright">Dennis Kelich</span> | <a href="../impressum/" data-config-href="urls.impressum">Impressum</a> | <a href="../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a> | <a href="../contact/" data-config-href="urls.contact">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="https://de.dennis-kelich.com/common/script.min.js"></script>
+</body>
+</html>
