@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ein Side-Projekt: Mein Webseiten Placeholder Generator | DennisKelich.com Blog</title>
+  <link rel="stylesheet" href="https://cdn.dennis-kelich.com/1.0.0/styles.min.css"/>
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.dennis-kelich.com/dkfav.jpg'>
+  <script>
+    // Apply dark mode class to HTML element immediately to prevent flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+    <!-- progress-bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <button onclick='topFunction()' id='myBtn' title='Go to top'>^</button>
+
+
+<header class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <span class="site-title" data-config="site.title">DennisKelich.com</span>
+    <nav id='site-navigation' class='main-navigation left'>
+        <div class='burger'>
+            <label for='menu-0'></label>
+        </div>
+        <div class='menu-mobile-menu-container'>
+            <input id='menu-0' type='checkbox' class='menu-checkbox'>
+            <div class='menu-wrapper menu'>
+                <div class='schaltflaeche'></div>
+                    <ul id='mobile-menu' class='menu-top'>
+                        <li><label class='menu-toggle toplvl' for='menu-0'></label></li>
+
+
+                        <li id='menu-item-1' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../#about'>Über mich</a></li>
+                        <li id='menu-item-2' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../'>Blog</a></li>
+                        <li id='menu-item-3' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../#projects'>Referenzen</a></li>
+                        <li id='menu-item-4' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../contact/' data-config-href="urls.contact">Kontakt</a></li>
+
+                        <li id='menu-item-4607' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page'><a href='../../impressum/' data-config-href="urls.impressum">Imprint</a></li>
+                        <li id='menu-item-4592' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy'><a href='../../datenschutz/' data-config-href="urls.datenschutz">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch menu-top">
+        <a href="https://de.dennis-kelich.com">DE</a>
+        <a href="https://dennis-kelich.com">EN</a>
+        <a href="https://jp.dennis-kelich.com">日本語</a>
+      </div>
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+<div class='sub_header_banner'>
+    <center>Blog</center>
+</div>
+<div class='content_wrapper'>
+
+  <div class="blog-post-wrapper">
+    <div class="blog-post-content">
+      <section id="blog" class="section" style='border-radius: 20px;'>
+        <h2>Ein Side-Projekt: Mein Webseiten Placeholder Generator - placeholder.cool</h2>
+
+        <p style='width: 80%;margin: 0px auto;'>
+            Wer eine neue Webseite plant, steht oft vor derselben Frage:<br>
+            <b>Was zeigen wir, solange das Projekt noch in Entwicklung ist?</b><br>
+            <br>
+            Genau aus diesem Bedarf heraus ist mein Webseiten Placeholder Generator <a target='_blank' href='https://placeholder.cool'>placeholder.cool</a> entstanden. Als kleines Side-Projekt gestartet, ermöglicht das Tool die schnelle Erstellung einer modernen, responsiven <b>Coming-Soon- oder Placeholder-Seite</b> – komplett im Browser und ohne externe Abhängigkeiten.<br>
+            <br>
+            <b>Warum ein eigener Placeholder-Generator?</b><br>
+            Viele bestehende Lösungen sind entweder stark eingeschränkt, datenschutztechnisch fragwürdig oder unnötig komplex.<br>
+            Mein Ziel war ein Tool, das:
+        </p><br>
+        <ul style='width: 80%;margin: 0px auto;'>
+            <li>flexibel anpassbar ist</li>
+            <li>ohne Frameworks auskommt</li>
+            <li>keine Daten speichert oder überträgt</li>
+            <li>direkt einsatzbereiten HTML-Code liefert</li>
+        </ul><br>
+        <p style='width: 80%;margin: 0px auto;'>
+            Das Ergebnis ist ein Generator, der eine fertige HTML-Placeholder-Seite erzeugt, die sofort hochgeladen werden kann.<br>
+            <br>
+            <b>Zentrale Funktionen im Überblick</b><br>
+            <br>
+        </p>
+        
+        <div class="accordion" style='width: 80%;margin: 0px auto;'>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>🎨 Visueller Editor mit Live-Preview</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Alle Änderungen sind sofort sichtbar. Design und Inhalte lassen sich intuitiv anpassen – ganz ohne Code.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>🌐 Mehrsprachige Placeholder-Seiten</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Aktuell werden folgende Sprachen unterstützt: Deutsch / Englisch / Japanisch<br>
+                Damit eignet sich der Generator auch für internationale Projekte.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>📱 Responsive Design</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Die erzeugten Seiten sind vollständig responsiv und funktionieren auf Smartphones, Tablets und Desktops gleichermaßen.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>🔒 Datenschutzfreundlich</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Der komplette Generator läuft lokal im Browser.<br>
+                Es werden keine Daten an Server gesendet – Privacy by Design.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>📧 Kontakt & Social Media</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Optional lassen sich: E-Mail-Adressen und Social-Media-Links direkt integrieren.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>📄 Individueller Footer</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Copyright-Hinweise oder eigene Links können frei ergänzt werden.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>💾 Export als einzelne HTML-Datei</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Am Ende steht eine einzige, autarke HTML-Datei – inklusive CSS und JavaScript.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h4>🚀 Keine Dependencies</h4>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                Kein Framework, keine externen Libraries, kein Build-Step.<br>
+                Reines HTML, CSS und JavaScript.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <p style='width: 80%;margin: 0px auto;'>
+            <br>
+            <b>Für wen eignet sich der Generator?</b><br>
+            <br>
+        </p>
+        <ul style='width: 80%;margin: 0px auto;'>
+            <li>Entwickler und Indie-Hacker</li>
+            <li>Startups in der Pre-Launch-Phase</li>
+            <li>Agenturen für schnelle Kunden-Placeholder</li>
+            <li>Alle, die eine schlanke Coming-Soon-Seite benötigen</li>
+        </ul>
+        <p style='width: 80%;margin: 0px auto;'>
+            <br>
+            <b>Fazit</b><br>
+            Der Webseiten Placeholder Generator <a target='_blank' href='https://placeholder.cool'>placeholder.cool</a> ist bewusst einfach gehalten, ohne auf Flexibilität zu verzichten.
+    Wer schnell eine professionelle Placeholder- oder Coming-Soon-Seite erstellen möchte, bekommt hier eine saubere, datenschutzfreundliche Lösung ohne technische Hürden.<br>
+
+    <br>
+            <div style='border-top: 1px solid #555;width: 80%;margin: 0px auto;padding: 10px 0px;'>
+            16.12.25
+            </div>
+        </p>
+      </section>
+    </div>
+    
+    <aside class="blog-sidebar">
+      <div class="sidebar-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../">← Zurück zum Blog</a></li>
+          <li><a href="../../#about">Über mich</a></li>
+          <li><a href="../../#projects">Projekte</a></li>
+          <li><a href="../../contact/">Kontakt</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <h3>Tags</h3>
+        <div class="tag-cloud">
+          <a href='/blog/tag/webdevelopment/'>#WebDevelopment</a>
+          <a href='/blog/tag/comingsoonseite/'>#ComingSoonSeite</a>
+          <a href='/blog/tag/javascript/'>#JavaScript</a>
+          <a href='/blog/tag/webplaceholder/'>#WEBplaceholder</a>
+          <a href='/blog/tag/html/'>#HTML</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+
+
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <b data-config="site.footerTitle">Dennis Kelich InfoHP</b><br>
+        &copy; <span data-config="site.copyright">Dennis Kelich</span> | <a href="../../impressum/" data-config-href="urls.impressum">Impressum</a> | <a href="../../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a> | <a href="../../contact/" data-config-href="urls.contact">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.dennis-kelich.com/1.0.0/script.js"></script>
+</body>
+</html>

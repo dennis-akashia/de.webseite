@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="DennisKelich, RINws, Blog, SynoCP, PHP, Intranet">
+  <meta name="description" content="Mit SynoCP App Overview v0.1 erscheint die erste öffentliche Komponente des SynoCP-Projekts. Das leichtgewichtige PHP-Dashboard erkennt Self-Hosted Anwendungen automatisch über app.json Dateien und erstellt daraus eine durchsuchbare Übersicht.">
+  <title data-config="site.title">DennisKelich.com Blog</title>
+  <link rel="stylesheet" href="https://cdn.dennis-kelich.com/1.0.0/styles.min.css"/>
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.dennis-kelich.com/dkfav.jpg'>
+  <script>
+    // Apply dark mode class to HTML element immediately to prevent flash
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
+</head>
+<body>
+    <!-- progress-bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <button onclick='topFunction()' id='myBtn' title='Go to top'>^</button>
+
+
+<header class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <span class="site-title" data-config="site.title">DennisKelich.com</span>
+    <nav id='site-navigation' class='main-navigation left'>
+        <div class='burger'>
+            <label for='menu-0'></label>
+        </div>
+        <div class='menu-mobile-menu-container'>
+            <input id='menu-0' type='checkbox' class='menu-checkbox'>
+            <div class='menu-wrapper menu'>
+                <div class='schaltflaeche'></div>
+                    <ul id='mobile-menu' class='menu-top'>
+                        <li><label class='menu-toggle toplvl' for='menu-0'></label></li>
+
+
+                        <li id='menu-item-1' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../../#about'>Über mich</a></li>
+                        <li id='menu-item-2' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../'>Blog</a></li>
+                        <li id='menu-item-3' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../../#projects'>Referenzen</a></li>
+                        <li id='menu-item-4' class='menu-item menu-item-type-post_type menu-item-object-page'><a href='../../../contact/' data-config-href="urls.contact">Kontakt</a></li>
+
+                        <li id='menu-item-4607' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page'><a href='../../../impressum/' data-config-href="urls.impressum">Imprint</a></li>
+                        <li id='menu-item-4592' class='mobilonly menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy'><a href='../../../datenschutz/' data-config-href="urls.datenschutz">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch menu-top">
+        <a href="https://de.dennis-kelich.com">DE</a>
+        <a href="https://dennis-kelich.com">EN</a>
+        <a href="https://jp.dennis-kelich.com">日本語</a>
+      </div>
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </div>
+  </div>
+</header>
+<div class='sub_header_banner'>
+    <center>Blog</center>
+</div>
+<div class='content_wrapper'>
+
+  <div class="blog-post-wrapper">
+    <div class="blog-post-content">
+      <section id="blog" class="section" style='border-radius: 20px;'>
+        <h2>🚀 Release: SynoCP App Overview v0.1</h2>
+
+        <p style='width: 80%;margin: 0px auto;'>
+            Heute veröffentliche ich mit SynoCP App Overview die erste öffentliche Komponente des SynoCP-Projekts.<br>
+<br>
+Die Anwendung ist ein leichtgewichtiges PHP-Dashboard für Self-Hosted Umgebungen. Ziel ist es, eine zentrale Übersicht für alle Anwendungen auf einem Server bereitzustellen, ohne dass dafür manuell eine Liste gepflegt werden muss.<br>
+<br>
+<b>Die Idee</b><br>
+Viele Self-Hosted Setups bestehen aus mehreren kleinen Tools, Admin-Oberflächen oder internen Anwendungen. Mit der Zeit entsteht eine Sammlung von URLs, die irgendwo dokumentiert sind – oder auch nicht.<br>
+<br>
+SynoCP App Overview löst dieses Problem über automatische Discovery.<br>
+<br>
+Jede Anwendung enthält lediglich eine kleine Konfigurationsdatei: app.json.
+Das Dashboard scannt die Unterverzeichnisse, liest diese Dateien zur Laufzeit ein und generiert daraus automatisch eine Übersicht.<br>
+<br>
+Neue Anwendungen erscheinen damit automatisch im Dashboard.<br>
+<br>
+<b>Funktionen</b><br>
+</p>
+<style>
+  table{width: 80%;margin: 0px auto;}
+  td{padding: 5px;border: 1px solid #555;}
+  tr td:first-of-type{background-color: var(--primary);color: #fff;font-weight: bold;text-align: center;}
+</style>
+<table>
+  <tr>
+    <td>Auto-Discovery</td><td>Unterverzeichnisse werden nach app.json Dateien durchsucht.</td>
+  </tr>
+  <tr>
+    <td>Kategorien</td><td>Apps können über ein category Feld gruppiert werden.</td>
+  </tr>
+  <tr>
+    <td>Favoriten</td><td>Mit "favorite": true markierte Anwendungen erscheinen in einem separaten Bereich.</td>
+  </tr>
+  <tr>
+    <td>Zuletzt verwendete Apps</td><td>Die letzten sechs geöffneten Anwendungen werden im Browser über localStorage gespeichert.</td>
+  </tr>
+  <tr>
+    <td>Live-Suche</td><td>Apps können direkt nach Name oder Beschreibung gefiltert werden.</td>
+  </tr>
+    <tr>
+    <td>Dark / Light Theme</td><td>Ein Theme-Toggle ermöglicht den schnellen Wechsel. Die Einstellung wird ebenfalls im Browser gespeichert.</td>
+  </tr>
+    <tr>
+    <td>Login-Indikator</td><td>Apps mit "login_required": true werden mit einem 🔒 Symbol gekennzeichnet.</td>
+  </tr>
+    <tr>
+    <td>Custom Icons</td><td>Anwendungen können eigene Icons bereitstellen. Falls keines vorhanden ist, wird automatisch ein Fallback-SVG verwendet.</td>
+  </tr>
+    <tr>
+    <td>Optionales Caching</td><td>Die generierte App-Liste kann optional in eine JSON-Datei geschrieben werden, um Dateisystemzugriffe zu reduzieren.</td>
+  </tr>
+    <tr>
+    <td>Responsives Layout</td><td>Das Karten-Grid passt sich kleineren Displays an und zeigt auf mobilen Geräten zwei Spalten.</td>
+  </tr>
+</table><br>
+<p style='width: 80%;margin: 0px auto;'>
+
+
+
+<b>Einsatzmöglichkeiten</b><br>
+SynoCP App Overview kann auf zwei Arten genutzt werden:<br>
+- als eigene Intranet-Startseite für Self-Hosted Anwendungen<br>
+- als Unterordner innerhalb einer bestehenden Anwendung<br>
+Dadurch lässt sich die Übersicht relativ einfach in bestehende Umgebungen integrieren.<br>
+<br>
+Feedback und Anregungen sind willkommen.<br>
+<br>
+👉 Github: <a href='https://github.com/SynoCP/app' target='_blank'>https://github.com/SynoCP/app</a><br>
+    <br>
+            
+            <div style='border-top: 1px solid #555;width: 80%;margin: 0px auto;padding: 10px 0px;'>
+            16.03.26
+            </div>
+        </p>
+      </section>
+    </div>
+    
+    <aside class="blog-sidebar">
+      <div class="sidebar-section">
+        <h3>Links</h3>
+        <ul>
+          <li>👉 <a href="https://github.com/SynoCP/app" target='_blank'>Projekt Github Repo</a></li>
+          <li>👉 <a href="https://synocp.com/" target='_blank'>SynoCP -Info HP-</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <h3>Tags</h3>
+        <div class="tag-cloud">
+          <a href='#'>#WebDevelopment</a>
+          <a href='#'>#release</a>
+          <a href='#'>#php</a>
+          <a href='#'>#SynoCP</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+
+
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <b data-config="site.footerTitle">Dennis Kelich InfoHP</b><br>
+        &copy; <span data-config="site.copyright">Dennis Kelich</span> | <a href="../../impressum/" data-config-href="urls.impressum">Impressum</a> | <a href="../../datenschutz/" data-config-href="urls.datenschutz">Datenschutz</a> | <a href="../../contact/" data-config-href="urls.contact">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.dennis-kelich.com/1.0.0/script.min.js"></script>
+</body>
+</html>
