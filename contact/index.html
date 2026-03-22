@@ -7,6 +7,7 @@
   <title data-config="site.title">DennisKelich.com Kontakt</title>
   <link rel="stylesheet" href="https://de.dennis-kelich.com/common/styles.min.css"/>
   <link rel='shortcut icon' type='image/x-icon' href='https://de.dennis-kelich.com/common/dkfav.jpg'>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script>
     // Apply dark mode class to HTML element immediately to prevent flash
     if (localStorage.getItem('darkMode') === 'true') {
@@ -82,6 +83,7 @@
             <input type='checkbox' name='datenschutz' required>
             Ich habe die <a href='../datenschutz/' target='_blank'>Datenschutzerklärung</a> gelesen und bin damit einverstanden. *
         </label><br><br>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACBN3JBKe5ZZjkBO"></div>
         <button type='submit'>Senden</button>
     </form>
     <div class='map-container'>
